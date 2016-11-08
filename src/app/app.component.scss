@@ -1,0 +1,62 @@
+app-toolbar {
+    background-color: #2C3E50;
+    color: #fff;
+}
+
+[main-title] {
+    margin-left: 15px;
+}
+
+app-toolbar nav {
+    font-size: 14px;
+
+    :not(:first-child){
+        margin-left: 22px;
+    }
+}
+
+paper-icon-button {
+    display: none;
+}
+
+
+@media (min-width: 1px) and (max-width: 650px){
+    
+    app-toolbar nav{
+        display: none;
+    }
+
+    paper-icon-button {
+        display: block;
+        --paper-icon-button-ink-color: white;
+    }
+}
+
+.dropdown-content {
+      background-color: white;
+      line-height: 20px;
+      border-radius: 3px;
+      box-shadow: 0px 2px 6px #ccc;
+}
+
+ ul {
+      
+    }
+.dropdown-conten ul li {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      display: block;
+      position: relative;
+      padding: 1em;
+      text-decoration: none;
+    }
+    li:not(:last-of-type) {
+      border-bottom: 1px solid #eee;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
