@@ -6,9 +6,13 @@ import { PolymerElement } from '@vaadin/angular2-polymer';
 
 import { AppComponent } from './app.component';
 
+// Shared component
+import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    ToolbarHomeComponent,
     PolymerElement('app-toolbar'),
     PolymerElement('paper-icon-button'),
     PolymerElement('iron-dropdown')/*,
