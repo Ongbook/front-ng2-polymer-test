@@ -1,6 +1,6 @@
 <app-toolbar>
 
-  <img width="45" src="http://ongbookprototipo.hol.es/view/img/ongbook.png">
+  <img id="logo" width="60" src="http://ongbookprototipo.hol.es/view/img/ongbook.png">
   <div main-title><strong>Ongbook</strong></div>
   <nav>
     <a href="javascript:void(0)">Atua em alguma Ong?</a>
@@ -8,12 +8,12 @@
     <a href="javascript:void(0)">Apoie</a>
   </nav>
   <paper-icon-button icon="menu" (click)="drop.toggle()"></paper-icon-button>
-  
+
   <iron-dropdown #drop horizontal-align="right" vertical-align="top">
     <ul class="dropdown-content" tabindex="0">
-        <li><a href="javascript:void(0)">Atua em alguma Ong?</a></li>
-        <li><a href="javascript:void(0)">Nossa Causa</a></li>
-        <li><a href="javascript:void(0)">Apoie</a></li>
+      <li><a href="javascript:void(0)">Atua em alguma Ong?</a></li>
+      <li><a href="javascript:void(0)">Nossa Causa</a></li>
+      <li><a href="javascript:void(0)">Apoie</a></li>
     </ul>
   </iron-dropdown>
 

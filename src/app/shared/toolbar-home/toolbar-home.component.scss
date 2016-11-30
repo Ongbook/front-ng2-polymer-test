@@ -1,19 +1,29 @@
 app-toolbar {
+  
   background-color: #2C3E50;
   color: white;
-}
-
-[main-title] {
-  margin-left: 15px;
-}
-
-app-toolbar nav {
-  font-size: 14px;
-
-  :not(:first-child){
-     margin-left: 22px;
+  
+  #logo {
+    margin-top: 16px;
+    margin-left: 30px;
   }
-}
+
+  [main-title] {
+    margin-left: 15px;
+  }
+
+  nav {
+    margin-right: 30px;
+    font-size: 14px;
+    
+    :not(:first-child){
+      margin-left: 25px;
+    }
+
+  }
+
+} 
+// End app-toolbar
 
 paper-icon-button {
   display: none;
@@ -22,54 +32,61 @@ paper-icon-button {
 
 @media (min-width: 1px) and (max-width: 650px){
   
-  app-toolbar nav{
-    display: none;
-  }
+  app-toolbar{
 
-  paper-icon-button {
-    display: block;
-    --paper-icon-button-ink-color: white;
-  }
+    nav{
+      display: none;
+    }
 
-  .dropdown-content {
-    margin-top: 10px;
-    margin-right: 10px;
-    background-color: white;
-    line-height: 20px;
-    border-radius: 3px;
-    box-shadow: 0px 2px 6px #ccc;
-  }
+    paper-icon-button {
+      display: block;
+      --paper-icon-button-ink-color: white;
+    }
 
-  ul {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-  
-  li {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    display: block;
-    position: relative;
-    padding: 1em;
-    text-decoration: none;
-    color: #2C3E50;
-  }
-  
-  li:not(:last-of-type) {
-    border-bottom: 1px solid #eee;
-  }
-  
-  a:hover {
-    text-shadow: 0px 2px 6px #ccc;
-  }
+    .dropdown-content {
+      margin-top: 10px;
+      margin-right: 10px;
+      background-color: white;
+      line-height: 20px;
+      border-radius: 3px;
+      box-shadow: 0px 2px 6px #ccc;
+    }
 
+    ul {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
 
+      li {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        :not(:last-of-type) {
+          border-bottom: 1px solid #eee;
+        }
+
+        a {
+          display: block;
+          position: relative;
+          padding: 1em;
+          text-decoration: none;
+          color: #2C3E50;
+        }
+
+        a:hover {
+          text-shadow: 0px 2px 6px #ccc;
+        }
+
+      }
+      // End li
+
+    }
+    // End ul
+
+  }
+  // End app-toolbar
 
 } 
 // End @media 650px

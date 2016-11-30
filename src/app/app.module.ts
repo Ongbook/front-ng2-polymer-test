@@ -2,10 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { AppComponent } from './app.component';
 import { PolymerElement } from '@vaadin/angular2-polymer';
 import { AngularFireModule } from 'angularfire2';
-
-import { AppComponent } from './app.component';
 
 // Shared component
 import { ToolbarHomeComponent } from './shared/toolbar-home/toolbar-home.component';
@@ -24,8 +23,7 @@ export const firebaseConfig = {
     ToolbarHomeComponent,
     PolymerElement('app-toolbar'),
     PolymerElement('paper-icon-button'),
-    PolymerElement('iron-dropdown')/*,
-    PolymerElement('iron-icons')*/
+    PolymerElement('iron-dropdown')
   ],
   imports: [
     BrowserModule,
